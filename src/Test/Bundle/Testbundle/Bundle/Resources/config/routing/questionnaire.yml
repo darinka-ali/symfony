@@ -1,0 +1,30 @@
+Test_questionnaire:
+    path:     /
+    defaults: { _controller: "TestTestbundleBundle:questionnaire:index" }
+
+Test_questionnaire_show:
+    path:     /{id}/show
+    defaults: { _controller: "TestTestbundleBundle:questionnaire:show" }
+
+Test_questionnaire_new:
+    path:     /new
+    defaults: { _controller: "TestTestbundleBundle:questionnaire:new" }
+
+Test_questionnaire_create:
+    path:     /create
+    defaults: { _controller: "TestTestbundleBundle:questionnaire:create" }
+    requirements: { _method: post }
+
+Test_questionnaire_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "TestTestbundleBundle:questionnaire:edit" }
+
+Test_questionnaire_update:
+    path:     /{id}/update
+    defaults: { _controller: "TestTestbundleBundle:questionnaire:update" }
+    requirements: { _method: post|put }
+
+Test_questionnaire_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "TestTestbundleBundle:questionnaire:delete" }
+    requirements: { _method: post|delete }

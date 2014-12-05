@@ -1,0 +1,7 @@
+test_testbundle_Test_questionnaire:
+    resource: "@TestTestbundleBundle/Resources/config/routing/questionnaire.yml"
+    prefix:   /questionnaire
+
+test_testbundle_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: TestTestbundleBundle:Default:index }

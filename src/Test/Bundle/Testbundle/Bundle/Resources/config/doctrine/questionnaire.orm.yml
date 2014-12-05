@@ -1,0 +1,27 @@
+Test\Bundle\Testbundle\Bundle\Entity\questionnaire:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+            column: Title
+        birthday:
+            type: date
+            column: Birthday
+        sex:
+            type: boolean
+            column: Sex
+        lookingfor:
+            type: boolean
+            column: Lookingfor
+        body:
+            type: text
+            column: Body
+    lifecycleCallbacks: {  }
